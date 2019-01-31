@@ -1,0 +1,122 @@
+body {
+  margin: auto;
+	width: 100%;
+	font-family: 'Cormorant Garamond', serif;
+	background-color: #ffffff !important;
+  font-size: 18px;
+}
+
+#matricaA {
+  
+  float:left; 
+  margin-left:100px; 
+  margin-top: 50px;
+  padding:5px;
+}
+
+#matricaB { 
+  
+  float: right; 
+  margin-top: 50px;
+  margin-right: 100px; 
+  padding:5px;
+}
+
+#imgs {
+  padding-top: 20px;
+  float: left;
+  margin-left: 20px;
+  text-align:center; 
+}
+.Prva {
+  top: 200;
+  }
+  
+.matricaA {
+  float:left; 
+  margin-left:100px; 
+  margin-top:20px;
+}
+
+.Treca h4{
+   font-size:20px; 
+   color: green;
+}
+
+input[type="text"] {
+  font-size:20px; 
+  color: red
+  
+}
+
+input[class="mat"] {
+  font-size:23px; 
+  color: red
+  
+}
+#n, #m, #x, #y, #s{
+  font-size: 20px;
+}
+
+.DrugaB{
+  float:right; 
+  margin-right:300px; 
+  margin-top:20px;
+}
+
+.btn btn-lg btn-block{
+   clear: both; 
+    
+   text-align:center;
+}
+
+.skalar {
+  top: 20px;
+  float: center;
+  text-align: center;
+}
+
+.btn-group {
+  padding: 10px 100px;
+}
+
+.btn-group h3 {
+  padding:20px; 
+  color: red;
+}
+
+#matricaC {
+  text-align:center; 
+  margin:10px; 
+  color: red;
+}
+input {
+  box-shadow: 0 0 3px #a25e5c;
+  border: 1px solid #a25e5c;
+  color: #a25e5c;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 15px;
+  padding: 10px !important;
+}
+
+#form h3 {
+  text-align:center;
+  font-size: 5px;
+  font-size:30px; 
+  text-align:center; 
+  color: #000099;
+}
+
+h4 {
+  display: inline;
+  font-size: 30px;  
+}
+
+.drustvene-mreze {
+  float: right;
+  padding: 10px;
+}

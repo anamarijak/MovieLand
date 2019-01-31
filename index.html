@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<link rel="shortcut icon" href="images/logoic.jpg">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	 crossorigin="anonymous">
+	<title>MovieLand</title>
+
+</head>
+
+<body onload="myFunction()">
+	<div class="cssload-battery" id="loader">
+		<div class="cssload-liquid"></div>
+	</div>
+	<div id="page" style="visibility: hidden;">
+		<canvas id="canvas"></canvas>
+		<header class="header">
+			<nav class="navigacijski-meni" id="screen1">
+				<ul class="nav-meni-ul">
+					<li class="nav-li-logo"><a href="https://movieland.neocities.org/images/logoic.jpg" target="_blank" class="nav-logo-link"><img
+							 src="images/logoic.jpg" class="nav-logo"></a></li>
+					<li><a href="index.html">Početna</a></li>
+					<li><a href="svijetFilma.html">Svijet filma</a></li>
+					<li><a href="svijetSerija.html">Svijet serija</a></li>
+					<li><a href="Onama.html">O nama</a></li>
+					<li><a href="historijskiRazvoj.html">Historijski razvoj</a></li>
+				</ul>
+				<ul class="nav-meni-ul ul-2">
+					<li><a href="#" class="srch">
+							<input type="text" name="search">
+							<i class="fas fa-search"></i>
+						</a></li>
+					<li><a href="login/index.html"><img src="images/batman.png" style="width:30px;"></a></li>
+				</ul>
+			</nav>
+			<div class="login-search">
+				<a href="#" class="srch">
+					<input type="text" name="search">
+					<i class="fas fa-search"></i>
+				</a>
+				<a href="login/index.html"><img src="images/batman.png" style="width:30px;"></a>
+			</div>
+
+			<input id="toggle" type="checkbox" />
+			<label class="hamburger" for="toggle">
+				<div class="top"></div>
+				<div class="meat"></div>
+				<div class="bottom"></div>
+			</label>
+
+
+
+			<div class="nav">
+				<div class="nav-wrapper">
+					<nav class="hamb-nav">
+						<a href="index.html">Početna</a>
+						<a href="svijetFilma.html">Svijet filma</a>
+						<a href="svijetSerija.html">Svijet serija</a>
+						<a href="Onama.html">O nama</a>
+						<a href="historijskiRazvoj.html">Historijski razvoj</a>
+					</nav>
+				</div>
+			</div>
+
+		</header>
+
+
+		<main>
+			<header>
+				<div id="container">
+
+					<div id="holder">
+
+						<div id="image">
+							<div class="img leo"></div>
+							<div class="img emma"></div>
+							<div class="img george"></div>
+						</div>
+
+						<div id="right"></div>
+
+						<div id="text">
+							<div id="centerText">
+								<p class="p quote">
+									" Only you and you alone can change your situation. Don’t blame it on anything or anyone. "
+								</p>
+								<p class="p quote">
+									" Don’t feel stupid if you don’t like what everyone else pretends to love. "
+								</p>
+								<p class="p quote">
+									" You never really learn much from hearing yourself speak. "
+								</p>
+							</div>
+
+							<nav class="nav-slider">
+								<a id="leftBtn" class="nav-slider-a prev"><i class="fa fa-arrow-left"></i></a>
+								<a id="rightBtn" class="nav-slider-a next"><i class="fa fa-arrow-right"></i></a>
+							</nav>
+						</div>
+					</div>
+
+					<div id="bg">
+						<div class="slide leo-bg"></div>
+						<div class="slide emma-bg"></div>
+						<div class="slide george-bg"></div>
+					</div>
+
+					<div id="nav-cirlces">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+
+				</div>
+			</header>
+			<section class="section">
+				<h1>Početna strana</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia dolor condimentum vehicula tincidunt.
+					Nulla vel sem sit amet velit tempus pretium eget et est. Sed maximus vestibulum vulputate. Praesent sed justo ac
+					dui ullamcorper volutpat. Fusce molestie elit eu convallis vulputate. Duis ac congue nunc, id consectetur urna.
+					Phasellus condimentum malesuada tortor eget ultricies. Donec sit amet nisi ut ante consequat semper sed id neque.
+					Donec ipsum felis, commodo ac diam id, aliquam tristique risus. Aenean in tellus sed dui tristique vestibulum. In
+					a maximus nunc. Nulla et dictum orci, vel fringilla tortor. Mauris a dictum velit, nec imperdiet ante.</p>
+				<p>Sed nulla tellus, ultrices non maximus sed, dapibus sit amet dolor. Nullam molestie nibh a varius dictum. Cras
+					sit amet quam euismod, vulputate sem at, sagittis tortor. Phasellus venenatis ac magna quis aliquam. Morbi auctor
+					lectus quis ligula vehicula accumsan. Nunc feugiat neque a leo tristique, quis mollis eros consectetur. Sed semper
+					justo quis felis volutpat venenatis. Aenean in rhoncus leo, eu tempor nunc. Donec cursus orci at tortor lacinia,
+					eget tempor nulla convallis. Sed et fringilla risus, et imperdiet erat.</p>
+				<p>Vivamus quis ornare odio. Vestibulum et lacus vel massa porttitor mattis eget vel dui. Donec iaculis convallis
+					mollis. Etiam malesuada, eros vel congue posuere, velit urna feugiat felis, tempus sodales libero lorem
+					scelerisque nunc. Curabitur ac enim vel libero porttitor fringilla nec et ipsum. Nam eu augue a sapien porttitor
+					tempor vitae aliquet mauris. Curabitur semper, velit in dictum sodales, libero nisl aliquam odio, in elementum
+					nunc leo finibus lectus. Sed vel imperdiet magna, et pharetra mauris. Duis sed pharetra nibh. Phasellus arcu
+					ligula, gravida non rutrum ac, tincidunt sit amet dolor. Integer suscipit porta nibh, at scelerisque leo suscipit
+					eget. Morbi eros magna, ullamcorper in iaculis id, varius non diam. Orci varius natoque penatibus et magnis dis
+					parturient montes, nascetur ridiculus mus. Sed eu vestibulum nisi, at auctor ante.</p>
+			</section>
+			
+			<div class="add" style="margin-left: 12%;">
+			  <a href="https://monitoringmesh.neocities.org/" target="_blank">
+			  <img src="/images/monitoring.png"></a>
+			  
+			  <a href="https://mytasks.neocities.org/" target="_blank">
+			  <img src="/images/mytasks.png"></a>
+			  
+			  <a href="https://izadjimo.neocities.org/" target="_blank">
+			  <img src="/images/izadjimo.png"></a>
+			  
+			  <a href="https://crypto.neocities.org/" target="_blank">
+			  <img src="/images/crypto.png"></a>
+			  
+			  <a href="https://razmisli.neocities.org/" target="_blank">
+			  <img src="/images/razmisli.png"></a>
+			  
+			  <a href="https://smartprediction.neocities.org/" target="_blank">
+			  <img src="/images/smart.png"></a>
+			  
+			  <a href="https://techshop.neocities.org/" target="_blank">
+			  <img src="/images/techshop.png"></a>
+			</div>
+		</main>
+		<hr>
+		<footer>
+			<p class="tekst-desno">All rights reserved by Lumiere®
+				<a href="https://www.instagram.com/anamaruu25" target="_blank"><img class="drustvene-mreze" src="images/instagram.png"></a>
+				<a href="https://www.facebook.com/dalila.cosic" target="_blank"><img class="drustvene-mreze" src="images/facebook-logo.png"></a>
+        <a href="#" target="_blank"><img class="brojac" src="https://counter2.freecounter.ovh/private/freecounterstat.php?c=8su1xm3y12dnwn9n35y361s7j4hbcmpa" 
+    border="0" title="website view counter" alt="website view counter"></a>
+			</p>
+		</footer>
+		</hr>
+
+	</div>
+
+	<script>
+		var myVar;
+
+		function myFunction() {
+			myVar = setTimeout(showPage, 3000);
+		}
+
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("page").style.visibility = "visible";
+		}
+	</script>
+
+	<script>
+		(function () {
+			var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+				function (callback) {
+					window.setTimeout(callback, 1000 / 60);
+				};
+			window.requestAnimationFrame = requestAnimationFrame;
+		})();
+
+
+		var flakes = [],
+			canvas = document.getElementById("canvas"),
+			ctx = canvas.getContext("2d"),
+			flakeCount = 400,
+			mX = -100,
+			mY = -100
+
+		canvas.width = window.innerWidth;
+		canvas.height = window.innerHeight;
+
+		function snow() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+			for (var i = 0; i < flakeCount; i++) {
+				var flake = flakes[i],
+					x = mX,
+					y = mY,
+					minDist = 150,
+					x2 = flake.x,
+					y2 = flake.y;
+
+				var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+					dx = x2 - x,
+					dy = y2 - y;
+
+				if (dist < minDist) {
+					var force = minDist / (dist * dist),
+						xcomp = (x - x2) / dist,
+						ycomp = (y - y2) / dist,
+						deltaV = force / 2;
+
+					flake.velX -= deltaV * xcomp;
+					flake.velY -= deltaV * ycomp;
+
+				} else {
+					flake.velX *= .98;
+					if (flake.velY <= flake.speed) {
+						flake.velY = flake.speed
+					}
+					flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+				}
+
+				ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+				flake.y += flake.velY;
+				flake.x += flake.velX;
+
+				if (flake.y >= canvas.height || flake.y <= 0) {
+					reset(flake);
+				}
+
+
+				if (flake.x >= canvas.width || flake.x <= 0) {
+					reset(flake);
+				}
+
+				ctx.beginPath();
+				ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+				ctx.fill();
+			}
+			requestAnimationFrame(snow);
+		};
+
+		function reset(flake) {
+			flake.x = Math.floor(Math.random() * canvas.width);
+			flake.y = 0;
+			flake.size = (Math.random() * 3) + 2;
+			flake.speed = (Math.random() * 1) + 0.5;
+			flake.velY = flake.speed;
+			flake.velX = 0;
+			flake.opacity = (Math.random() * 0.5) + 0.3;
+		}
+
+		function init() {
+			for (var i = 0; i < flakeCount; i++) {
+				var x = Math.floor(Math.random() * canvas.width),
+					y = Math.floor(Math.random() * canvas.height),
+					size = (Math.random() * 3) + 2,
+					speed = (Math.random() * 1) + 0.5,
+					opacity = (Math.random() * 0.5) + 0.3;
+
+				flakes.push({
+					speed: speed,
+					velY: speed,
+					velX: 0,
+					x: x,
+					y: y,
+					size: size,
+					stepSize: (Math.random()) / 30,
+					step: 0,
+					opacity: opacity
+				});
+			}
+
+			snow();
+		};
+
+		canvas.addEventListener("mousemove", function (e) {
+			mX = e.clientX,
+				mY = e.clientY
+		});
+
+		window.addEventListener("resize", function () {
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+		})
+
+		init();
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/slider.js"></script>
+</body>
+
+</html>

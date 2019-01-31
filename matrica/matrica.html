@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="shortcut icon" href="/matrica/MATRIX-logo.png"  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Matrice</title>
+    <script src="matrica.js" > </script>
+  </head>
+
+  <body>
+    <div id="imgs">
+      <img src="MATRIX-logo.png" alter="Matrica" width="200" height="200">
+    </div>
+  
+    <form id="form" >
+    
+    <div class="Prva">
+      <div class="matricaA">
+        <h3> Matrica A </h3>
+        <br> 
+        <span class="Treca"><h4> Broj redova </h4>
+        <input type="text" id="n" />
+        <br><br>
+        <h4> Broj kolona </h4></span>
+        <input type="text" id="m" />
+        <br> <br>      
+        <input type="button" style="color: green;" value="Kreiraj matricu A" onclick="kreirajMatricuA();"  class="btn btn-lg btn-block"/>
+      </div>
+            
+            
+      <div class="DrugaB">
+        <h3> Matrica B </h3>
+        <br> 
+        <span class="Treca"><h4> Broj redova</h4>
+        <input type="text" id="x"> <br><br>
+        <h4> Broj kolona </h4></span>
+        <input type="text" id="y" />
+        <br> <br>
+        
+        <input type="button" style="color: green;" value="Kreiraj matricu B" onclick="kreirajMatricuB();"  class="btn btn-lg btn-block"/>
+      </div>
+    </div>   
+      
+    <div id="matricaA"> </div>  
+    <div id="matricaB"> </div>
+    <div class="btn btn-lg btn-block" style="padding-top: 600px;">
+      <span class="skalar"> <h4 style="color: #000099;"> Unesite skalar </h4> </span><br/><input type="text" id="s">
+    </div>
+         
+    <div class="btn-group">
+      <input type="button" style="color: green; margin-left: 150px;" value="Sabiranje matrica" onclick=sabiranje();> 
+      <input type="button" style="color: green;" value="Oduzimanje matrica" onclick=oduzimanje();>
+      <input type="button" style="color: green;" value="Množenje matrica" onclick=mnozenje();>
+      <input type="button" style="color: green;" value="Množenje skalarom" onclick=mnozenjeskalarom();>
+      <input type="button" style="color: green;" value="Transponovana matrica A" onclick=transponovana();>
+      <input type="button" style="color: green;" value="Matrica (random elementi)" onclick=random();>
+    </div>
+    
+    <h3 style="color: red; padding: 20px;"> Rezultat </h3>
+    <div id="matricaC"> </div>
+  </form>
+  <hr />
+    
+  <footer>
+    <div>
+      <p class="tekst-desno">All rights reserved by MatrixLumiere®
+			<a href="https://www.instagram.com/anamaruu25" target="_blank"><img class="drustvene-mreze" src="/images/instagram.png"></a>
+		  <a href="https://www.facebook.com/dalila.cosic" target="_blank"><img class="drustvene-mreze" src="/images/facebook-logo.png"></a>
+    </div>
+  </footer>
+  
+  </body>
+</html>c

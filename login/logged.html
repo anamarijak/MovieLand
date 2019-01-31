@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MovieLand-Admin</title>
+    	<link rel="icon" type="image/png" href="../images/logoic.jpg"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+</head>
+
+<body style="width: 100%; margin: auto; overflow-x: hidden; color:#a25e5c; background-color: #eeeeeb">
+
+    <div class="mainDiv form-group" style="width:100%; position:relatve; margin: 10px;">
+        <div class="row">
+            <div class="col-sm"><p style="color:#a25e5c; margin-left: 100px; font-size:24px;">Dodaj film</p></div>
+            <div class="col-sm">
+                <input type="text" class="form-control" name="title" id="title" placeholder="Naziv fiilma">
+            </div>
+            <div class="col-sm">
+                <input type="text" class="form-control" name="poster_path" id="poster_path" placeholder="Url postera">
+            </div>
+
+            <div class="col-sm">
+                <input type="text" class="form-control" name="release_date" id="release_date" placeholder="Datum izlaska">
+            </div>
+
+            <div class="col-sm">
+                <input id="overview" class="form-control" placeholder="Kratki opis">
+            </div>
+            <div class="col">
+                <button  class="btn btn-light" id="submitBtn" onclick="submitClick()">Pošalji</button>
+            </div>
+            <div class="col">
+                <a  class="btn btn-light" id="submitBtn" href="../index.html">Logout</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin:20px;">
+        <h2 >Popis filmova</h2>
+    </div>
+
+    <table id="table_id" class="display" style="margin:10px; width: 100%;">
+        <thead>
+            <tr style="line-height:60px; background-color: #a25e5c; color: #eeeeeb">
+                <th style="padding-left: 10px;width:15%; font-size: 18px;">Naziv</th>
+                <th style="width:10%; font-size:18px;">Datum izlaska</th>
+                <th style="font-size:18px;">Poster</th>
+                <th style="font-size:18px;">Kratki opis</th>
+                <th style="font-size:18px;">Akcija</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+    </table>
+    
+    
+
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-functions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/pagging.js"></script>
+
+
+</body>
+
+</html>
